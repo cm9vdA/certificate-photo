@@ -1,7 +1,7 @@
 <view class="container">
   <page-scroll-message style="width: 100%;"></page-scroll-message>
   <!-- tab切换 -->
-	<view wx:if="{{vipCount || filePath2 || videoLoaded}}" class="tabs">
+	<!-- <view wx:if="{{vipCount || filePath2 || videoLoaded}}" class="tabs">
 		<view bindtap="changeTab" data-index="0" class="{{tabIndex === 0 ? 'tab tab-active' : 'tab'}}">
 			<text class="name">普通版</text>
 			<view class="description">每日不限量抠图</view>
@@ -10,7 +10,7 @@
 			<text class="name">升级版</text>
 			<view class="description">抠图精细发丝可见</view>
 		</view>
-	</view>
+	</view> -->
 
   <!-- 自定义背景颜色选择器 -->
 	<view class="color-picker-view">

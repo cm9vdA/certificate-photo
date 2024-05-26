@@ -23,20 +23,20 @@
 <view class="padding flex text-center text-grey bg-white shadow-warp">
   <view class="flex flex-sub flex-direction solid-right">
     <view class="text-xxl text-orange">{{userInfo.count || 0}}<text class="text-df">次</text></view>
-    <view class="margin-top-sm">剩余普通下载</view>
+    <view class="margin-top-sm">剩余下载次数</view>
   </view>
-  <view class="flex flex-sub flex-direction solid-right">
+  <!-- <view class="flex flex-sub flex-direction solid-right">
     <view class="text-xxl text-blue">{{userInfo.vipCount || 0}}<text class="text-df">次</text></view>
     <view class="margin-top-sm">剩余精细抠图</view>
-  </view>
+  </view> -->
   <view class="flex flex-sub flex-direction">
     <view class="text-xxl text-green">{{userInfo.accumCreatePhoto || 0}}<text class="text-df">张</text></view>
     <view class="margin-top-sm">累计下载</view>
   </view>
 </view>
-
 <ad unit-id="adunit-eaee002e3b71ca92"></ad>
 
+<view style="text-align: center;margin-top: 30rpx;">我的唯一标识：{{ userInfo.openid }}</view>
 <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
   <view class="cu-item arrow">
     <navigator class="content" url="/pages/share/share">

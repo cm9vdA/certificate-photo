@@ -125,13 +125,13 @@
 		</view>
 	</view>
 	<view class="padding-xs" wx:if="{{count <= 0 && !filePath2}}">
-		<view>下载次数已用完，升级版不限制下载次数。</view>
+		<view>下载次数已用完，左上角看视频加次数。</view>
 		<view wx:if="{{tabIndex === 1}}">点击使用后即可下载</view>
 	</view>
 	<view class="download-view">
 		<view class="no-count" wx:if="{{ count <= 0 && !filePath2 && tabIndex === 0}}">
-			<!-- <button wx:if="{{videoLoaded}}" bindtap="lookVideo" type="default">看视频后下载</button> -->
-			<navigator target="self" url="/pages/mein/mein" open-type="reLaunch">
+			<button wx:if="{{videoLoaded}}" bindtap="lookVideo" type="default">看视频后下载</button>
+			<navigator wx:else="" target="self" url="/pages/mein/mein" open-type="reLaunch">
 				<button type="default">领 取 次 数 (+1)</button>
 			</navigator>
 		</view>

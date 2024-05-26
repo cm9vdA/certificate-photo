@@ -228,7 +228,8 @@ Page({
 					// this.useCount(true, 1)
 					// this.inccVipCount()
 					// setTimeout(this.modalConfirm, 500)
-					this.modalConfirm()
+          // this.modalConfirm()
+          this.incCount()
 				} else {
 					wx.showToast({
 						title: '看完才有奖励哦！',

@@ -355,11 +355,11 @@ Page({
             videoAd.onClose((res) => {
                 console.log(res)
                 if (res && res.isEnded) {
-                    if (this.data.tabIndex === 0) {
-                        this.setData({ tabIndex: 1, hideDownloadBtn: false })
-                    }
+                    // if (this.data.tabIndex === 0) {
+                    //     this.setData({ tabIndex: 1, hideDownloadBtn: false })
+                    // }
                     wx.showToast({ title: '奖励已下发' })
-                    this.useCount(true, 1)
+                    this.useCount(false, 3)
                 } else {
                     wx.showToast({ title: '看完才有奖励哦！', icon: 'none' })
                 }

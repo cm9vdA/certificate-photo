@@ -359,7 +359,7 @@ Page({
                     //     this.setData({ tabIndex: 1, hideDownloadBtn: false })
                     // }
                     wx.showToast({ title: '奖励已下发' })
-                    this.useCount(false, 3)
+                    this.useCount(false, 1)
                 } else {
                     wx.showToast({ title: '看完才有奖励哦！', icon: 'none' })
                 }

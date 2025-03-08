@@ -177,7 +177,7 @@ Page({
 		wx.showLoading()
 		wx.cloud.callFunction({
 			name: 'useCount',
-			data: {inc: 3}
+			data: {inc: 1}
 		}).then(res => {
 			wx.hideLoading({})
 			this.timerFunc()

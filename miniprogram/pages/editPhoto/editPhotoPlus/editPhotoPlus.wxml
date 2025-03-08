@@ -125,7 +125,7 @@
 		</view>
 	</view>
 	<view class="padding-xs" wx:if="{{count <= 0 && !filePath2}}">
-		<view>下载次数已用完，左上角看视频加次数。</view>
+		<view>下载次数已用完。</view>
 		<view wx:if="{{tabIndex === 1}}">点击使用后即可下载</view>
 	</view>
 	<view class="download-view">
